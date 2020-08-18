@@ -1,0 +1,20 @@
+  236  ls
+  237  cd innopolis
+  238  ls
+  239  mkdir OS
+  240  cd OS
+  241  ls
+  242  mkdir week1
+  243  git init
+  244  code .
+  245  git remote add origin git@github.com:sevenzing/os-homework.git
+  246  mkdir week1
+  247  history
+  248  cd week1
+  249  ls /usr/bin | grep gcc | sort -r
+  250  ls /usr/bin | grep gcc | sort -r > ex1.txt
+  251  ls
+  252  cd ..
+  253  mkdir week2
+  254  history | less
+  255  history | tail -n 20
