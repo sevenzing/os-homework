@@ -1,0 +1,1 @@
+history | tail -n 20 > ex2.txt
