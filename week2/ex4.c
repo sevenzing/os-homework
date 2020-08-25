@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 void swap(int *a, int *b){
+    // GUYS, HELP ME!
+    // I'M STUCK IN THE VIM EDITOR!!!
+    // HOW CAN I GET OUT??
+    // CTRL + C DOEST WORK!!!!!!!!!!!!!!!!!!!!!!
     int temp;
     temp = *a;
     *a = *b;
