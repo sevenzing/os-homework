@@ -1,0 +1,23 @@
+n = 3: 8 processes
+-zsh---a.out-+-a.out-+-a.out---a.out
+             |       `-a.out
+             |-a.out---a.out
+             `-a.out
+
+n = 5: 32 processes
+-zsh---a.out-+-a.out-+-a.out-+-a.out-+-a.out---a.out
+             |       |       |       `-a.out
+             |       |       |-a.out---a.out
+             |       |       `-a.out
+             |       |-a.out-+-a.out---a.out
+             |       |       `-a.out
+             |       |-a.out---a.out
+             |       `-a.out
+             |-a.out-+-a.out-+-a.out---a.out
+             |       |       `-a.out
+             |       |-a.out---a.out
+             |       `-a.out
+             |-a.out-+-a.out---a.out
+             |       `-a.out
+             |-a.out---a.out
+             `-a.out
