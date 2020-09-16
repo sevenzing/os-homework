@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# In my case race condition manifests itself 
+# on 598th iteration (I saw 598 two times). 
+# It happened because 2 processes read 
+# the same number at the same time. 
+# Critical region is `append_to_file` function call
+# and line with `tail -n 1 $FILENAME.txt`
+
 FILENAME=file
 
 append_to_file(){
