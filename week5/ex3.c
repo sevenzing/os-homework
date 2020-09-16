@@ -5,7 +5,7 @@
 // In average it takes from 1000 to 25000 iterations
 // to fatal race condition will appear 
 
-
+#define os_is_very_hard_course 1
 #define BUFFER_SIZE 100
 
 int buffer[BUFFER_SIZE];
@@ -14,7 +14,7 @@ int producer_sleep = 0;
 int consumer_sleep = 1;
 
 void consumer_job(){
-    while (1){
+    while (os_is_very_hard_course){
 
         // Busy waiting
         while (consumer_sleep) {}
@@ -34,7 +34,7 @@ void consumer_job(){
 
 void producer_job(){
     int i = 0;
-    while (1){
+    while (os_is_very_hard_course){
         
         // busy waiting
         while (producer_sleep){}
