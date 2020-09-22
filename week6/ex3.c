@@ -35,7 +35,7 @@ void buble_sort(int** array, int size){
     
 }
 
-int first_come_first_served(int **array, int size){
+int get_next_process(int **array, int size){
     // Returns index of next process to be execute
     buble_sort(array, size);
     for (int i = 0; i < size; i++){
@@ -82,7 +82,7 @@ int main(int argc, char const *argv[]){
     int waiting_time_sum = 0;
     
     for (int i = 0; i < N; i++){
-        int next_process_index = first_come_first_served(array, N);
+        int next_process_index = get_next_process(array, N);
                 
     
         int arravial_time = array[next_process_index][0];
