@@ -58,8 +58,10 @@ int main(int argc, char const *argv[]){
     FILE *fptr;
     fptr = fopen("ex3.txt","r");
     int N;
-    int Quantum = 3;
     fscanf(fptr,"%d", &N);
+    
+    int Quantum;
+    fscanf(fptr,"%d", &Quantum);
     
     int **array = malloc(N * sizeof(int*));
 
