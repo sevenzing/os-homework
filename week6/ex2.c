@@ -26,7 +26,7 @@ void buble_sort(int** array, int size){
 int shortest_job_first(int **array, int *processed, int size, int t){
     // Returns index of next process to be execute
 
-    int min_burst_time_index = 0;
+    int min_burst_time_index = -1;
     int min_burst_time = 100000000;
     for (int j = 0; j < size; j++){
         if (processed[j] || array[j][0] > t)
@@ -37,7 +37,8 @@ int shortest_job_first(int **array, int *processed, int size, int t){
             min_burst_time_index = j;
         }
     }
-    processed[min_burst_time_index] = 1;
+    if (min_burst_time_index != -1)
+        processed[min_burst_time_index] = 1;
     return min_burst_time_index;
 }
 
@@ -68,6 +69,11 @@ int main(int argc, char const *argv[]){
 
     for (int i = 0; i < N; i++){
         int next_process_index = shortest_job_first(array, processed, N, t);
+        if (next_process_index < 0){
+            t += 1;
+            i -= 1;
+            continue;
+        }
         int arravial_time = array[next_process_index][0];
         int burst_time = array[next_process_index][1];
         
