@@ -15,7 +15,7 @@ void buble_sort(int** array, int size){
     for (int i = 0; i < size; i++){
         for (int j = 0; j < size; j++){
             
-            if (array[i][0] < array[j][1])
+            if (array[i][0] < array[j][0])
                 swap(&(array[i]), &(array[j]));
         }
         
