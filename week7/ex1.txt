@@ -1,0 +1,4 @@
+Out put for 
+$ size ex2.out
+   text	   data	    bss	    dec	    hex	filename
+   3165	    632	      8	   3805	    edd	ex2.out
