@@ -1,0 +1,5 @@
+8KB = 2^13 bytes, it means that for offset we need exactly **13** bits
+We have 16 bits for virtual memory, but 13 of them are used for offset, 
+so 16-13=3 bits for page number.
+
+    Answer: 2^3 = 8 entries in page table

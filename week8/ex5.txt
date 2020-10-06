@@ -1,0 +1,7 @@
+Physical address (PA) is exactly the memory of the computer (RAM). 
+
+However, it's hard to work with PA without any abstraction, because you need to work 
+with blocks without adjacent addresses. That's why we need Virtual address (VA)
+
+VA is convenient abstraction that allows us to work with memory as 
+if it is sequential and continuous. Also VA helps when we need more memory than RAM has
