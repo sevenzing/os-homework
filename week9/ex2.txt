@@ -3,8 +3,11 @@ With # of page frames = N:
     To increase hit rate we can use the following sequence: 
     1, 2, 3 .. N-1, N, 1, 2, 3 ..
         Hit rate = 100%
+    This happpeds because # of different pages == N, and we do not need to remove pages at all
 
         
     To descrease hit rate we can use the following sequence: 
     1, 2, 3, 4, .. , 2N - 1,  2N, 1, 2, 3, .. ,
         Hit rate = 0%
+
+    This happpeds because # of different pages == 2*N, and on every step we need to remove page
