@@ -1,0 +1,11 @@
+$ gcc ex4.c -o ex4.out ; ./ex4.out
+I found several files with the same inum: link1 file1
+
+
+I created several links to check program
++ link2 and link3 for file1
++ link1_2 for file1
+
+$ gcc ex4.c -o ex4.out ; ./ex4.out
+I found several files with the same inum: link2 link1, file1, link3
+I found several files with the same inum: file2 link1_2

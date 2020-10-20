@@ -1,0 +1,23 @@
+$ touch _ex3.txt
+$ chmod -x _ex3.txt
+$ ls -l  _ex3.txt
+-rw-rw-r-- 1 lev lev 0 окт 20 13:12 _ex3.txt
+$ chmod 707 _ex3.txt 
+$ ls -l _ex3.txt 
+-rwx---rwx 1 lev lev 0 окт 20 13:12 _ex3.txt
+$ chmod g=u _ex3.txt 
+$ ls -l _ex3.txt 
+-rwxrwxrwx 1 lev lev 0 окт 20 13:12 _ex3.txt
+
+
+What does 660 mean for ex3.txt?
+only owner and group members can read and write file
+
+
+What does 775 mean for ex3.txt?
+means everyone can read and execute, only owner and group members can write file
+
+What does 777 mean for ex3.txt?
+means everyone has all permitions
+
+
