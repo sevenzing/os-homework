@@ -16,7 +16,6 @@ int main(int argc, char const *argv[])
     char *file_names[N];
     
     struct dirent *Dir;
-    struct stat *file_stat = malloc(sizeof(struct stat));
     
     int i = 0;
     while ((Dir = readdir(dirp)) != NULL) {
