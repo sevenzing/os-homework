@@ -1,0 +1,8 @@
+In first case we have no \n , so it means that `Hello` 
+string will be in buffer BEFORE fork(). 
+
+Since fork() create a full snapshot of the process, 
+content of buffer will be also copyied to new fork (why does he do it ...?)
+and printed twice
+
+In the second case buffer is flashed AFTER fork() and everything works OK.
