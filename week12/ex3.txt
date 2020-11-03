@@ -1,0 +1,20 @@
+$ du -sh big_file.txt
+1,8G    big_file.txt
+
+BUF_SIZE    WITHOUT O_SYNC  WITH O_SYNC
+---------------------------------------------
+1048576     3,261 total     14,594 total     
+
+1024:       7,221 total     очень много 
+
+128:        46,043 total    очень очень много
+---------------------------------------------
+
+
+copy.c has this code:
+
+    while ((numRead = read(inputFd, buf, BUF_SIZE)) > 0)
+
+So, it is logical that increasing the buffer size will increase the speed of copying.
+
+Adding O_SYNC flag disables parallel writing, so speed is significantly reduced
